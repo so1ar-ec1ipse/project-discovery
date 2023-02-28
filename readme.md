@@ -10,8 +10,8 @@ This is a test assessment from Project Discovery which is to evaluate the experi
 ```sh
 # Node version: v18.14.2
 
-# Install dependencies (there is a version conflict between node and react-virtualized, so use --legacy-peer-deps to ignore it)
-npm i --legacy-peer-deps
+# Install dependencies
+npm i
 
 # Start the application
 npm start
