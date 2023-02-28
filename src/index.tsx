@@ -1,8 +1,6 @@
 import "@fontsource/inter";
-import { createRoot } from "react-dom/client";
-
+import { render } from "react-dom";
 import App from "./App";
+const container = document.getElementById("root");
 
-const root = createRoot(document.getElementById("root") as HTMLElement);
-
-root.render(<App />);
+render(<App />, container);
