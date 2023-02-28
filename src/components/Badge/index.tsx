@@ -48,8 +48,10 @@ export default function Badge({
     <div
       className={`${getClassName(type)} ${className}`}
       onClick={(e) => {
-        e.stopPropagation();
-        onClick && onClick(e);
+        if (onClick) {
+          e.stopPropagation();
+          onClick(e);
+        }
       }}
     >
       {children}
